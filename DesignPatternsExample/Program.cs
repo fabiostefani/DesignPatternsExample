@@ -4,6 +4,7 @@ using DesignPatternsExample.AbstractFactory.Factory;
 using DesignPatternsExample.Builder;
 using DesignPatternsExample.Builder.Models;
 using DesignPatternsExample.FactoryMethod;
+using DesignPatternsExample.Prototype;
 
 Executar();
 
@@ -13,6 +14,7 @@ void Executar()
     AbstractFactory();        
     FactoryMethod();
     Builder();
+    Prototype();
 }
 
 void AbstractFactory()
@@ -38,4 +40,12 @@ void Builder()
     Console.WriteLine("Builder");
     new ExecucaoBuilder().Executar();
     Console.WriteLine("==========================================");
+}
+
+void Prototype()
+{
+    Console.WriteLine("Builder");
+    new ExecucaoPrototype().Executar();
+    Console.WriteLine("==========================================");
+    
 }

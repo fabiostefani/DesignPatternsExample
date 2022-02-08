@@ -5,7 +5,7 @@ public abstract class VeiculoBuilder
 {
     protected Veiculo _veiculo;
 
-    public Veiculo ObterVeiculo
+    public Veiculo Veiculo
     {
         get { return _veiculo; }
     }
