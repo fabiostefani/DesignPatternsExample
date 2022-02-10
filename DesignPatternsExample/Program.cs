@@ -5,6 +5,7 @@ using DesignPatternsExample.Builder;
 using DesignPatternsExample.Builder.Models;
 using DesignPatternsExample.FactoryMethod;
 using DesignPatternsExample.Prototype;
+using DesignPatternsExample.Singleton;
 
 Executar();
 
@@ -15,6 +16,7 @@ void Executar()
     FactoryMethod();
     Builder();
     Prototype();
+    Singleton();
 }
 
 void AbstractFactory()
@@ -49,3 +51,12 @@ void Prototype()
     Console.WriteLine("==========================================");
     
 }
+
+void Singleton()
+{
+    Console.WriteLine("Singleton");
+    new ExecucaoSingleton().Executar();
+    Console.WriteLine("==========================================");
+    
+}
+
